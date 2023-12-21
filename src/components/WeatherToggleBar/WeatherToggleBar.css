@@ -1,0 +1,27 @@
+/* WeatherToggleBar.css */
+
+.toggle-bar {
+  display: flex;
+  background: rgba(0, 0, 0, 0.16);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.toggle-btn:hover {
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.active {
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.16);
+}

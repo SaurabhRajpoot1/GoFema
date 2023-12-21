@@ -1,13 +1,88 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+}
+/* FONT CLAMPS */
+/* FONT SIZE 0.5rem clamped */
+.fs-8 {
+  font-size: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+.fs-12 {
+  font-size: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
+}
+/* FONT SIZE 1rem clamped */
+.fs-16 {
+  font-size: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+.fs-22 {
+  font-size: clamp(1.375rem, 0rem + 1.7188vw, 4.125rem);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* FONT SIZE 1.5rem clamped */
+.fs-24 {
+  font-size: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
+}
+
+/* FONT SIZE 2rem clamped */
+.fs-32 {
+  font-size: clamp(2rem, 0rem + 2.5vw, 6rem);
+}
+.fs-36 {
+  font-size: clamp(2.25rem, 0rem + 2.8125vw, 6.75rem);
+}
+.fs-56 {
+  font-size: clamp(3.5625rem, 0rem + 4.4531vw, 10.6875rem);
+}
+/* PADDING CLAMPS */
+/* PADDING SIZE 0.5rem clamped */
+.pd-8 {
+  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+
+/* PADDING SIZE 1rem clamped */
+.pd-16 {
+  padding: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+/* PADDING SIZE 1.5rem clamped */
+.pd-24 {
+  padding: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
+}
+
+/* PADDING SIZE 2rem clamped */
+.pd-32 {
+  padding: clamp(2rem, 0rem + 2.5vw, 6rem);
+}
+
+/* MARGIN CLAMPS */
+/* MARGIN SIZE 0.5rem clamped */
+.mg-8 {
+  margin: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+
+/* MARGIN SIZE 1rem clamped */
+.mg-16 {
+  margin: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+
+/* MARGIN SIZE 1.5rem clamped */
+.mg-24 {
+  margin: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
+}
+
+/* MARGIN SIZE 2rem clamped */
+.mg-32 {
+  margin: clamp(2rem, 0rem + 2.5vw, 6rem);
+}
+/* Margin bottom */
+.mb-28 {
+  margin-bottom: clamp(1.75rem, 0rem + 2.1875vw, 5.25rem);
 }

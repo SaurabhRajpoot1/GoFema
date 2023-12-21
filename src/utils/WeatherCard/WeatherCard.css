@@ -1,0 +1,19 @@
+.main_containerWeatherDetails {
+  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  display: flex;
+  /* width: 21.3%; */
+  /* height: 37.4%; */
+  flex-direction: row;
+
+  border-radius: 8px;
+  background: linear-gradient(
+    151deg,
+    rgba(254, 254, 254, 0.2) 0%,
+    rgba(152, 152, 152, 0.2) 100.72%
+  );
+}
+.lefSide {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+}
