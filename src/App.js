@@ -3,6 +3,7 @@ import "./App.css";
 import backgroundVidNormal from "./resources/backgroundVidNormal.mp4";
 import LeftDetails from "./components/LeftDetails/LeftDetails";
 import RightDetails from "./components/RightDetails/RightDetails";
+import newYourkVideo from "./resources/newyourk.mp4";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {

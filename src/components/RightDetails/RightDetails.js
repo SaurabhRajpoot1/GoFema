@@ -8,6 +8,7 @@ import DropDown from "../DropDown/DropDown";
 import cloudwithSun from "../../resources/cloudwithSun.svg";
 import profile from "../../resources/Profile.svg";
 import Add from "../../resources/Add.svg";
+import notification from "../../resources/Notification.svg";
 import BackGroundForLocation from "../../resources/CloudImgeForLocationBackground.jpg";
 const AddLocationForm = () => {
   const [showForm, setShowForm] = useState(false);
@@ -48,6 +49,22 @@ const AddLocationForm = () => {
 
   return (
     <div className="add-location-container">
+      <div className="searchBar">
+        <div>
+          <img src={notification} alt="noti_img" />
+        </div>
+
+        <div id="enter_zip">
+          <input
+            type="text"
+            value={zipCode}
+            onChange={(e) => setZipCode(e.target.value)}
+            className="underline-input fs-14"
+            placeholder="Search"
+          />
+          <img src={serach} className="serach_icon" />
+        </div>
+      </div>
       <div>
         {savedLocations.map((location, index) => (
           <div key={index} className="saved-location">
@@ -86,7 +103,7 @@ const AddLocationForm = () => {
       )}
       {showForm && (
         <div className="add-location-form">
-          <h2>Add Location</h2>
+          <div className="fs-28">Add Location</div>
           <div id="enter_zip">
             <input
               type="text"
@@ -130,7 +147,9 @@ const AddLocationForm = () => {
             </div>
           </div>
           <div>
-            <button onClick={handleSaveForm}>Save</button>
+            <div className="savebutton" onClick={handleSaveForm}>
+              Save
+            </div>
           </div>
         </div>
       )}

@@ -1,11 +1,21 @@
 .add-location-container {
-  width: 19.43%;
+  width: 23.86%;
   height: 100%;
+  overflow-y: scroll;
   text-align: left;
-  margin: 20px;
+  margin: clamp(1.25rem, 0rem + 1.5625vw, 3.75rem);
+}
+.searchBar {
+  display: inline-flex;
+  padding-bottom: clamp(1.25rem, 0rem + 1.5625vw, 3.75rem) 0px;
+  align-items: center;
+  gap: clamp(1rem, 0rem + 1.25vw, 3rem);
 }
 .dropDownContainer {
-  height: 428px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+  height: 100%;
   overflow-y: scroll;
 }
 .formButton {
@@ -56,6 +66,7 @@
 }
 .add-location-form {
   display: flex;
+  height: 86.19%;
   flex-direction: column;
   gap: clamp(1.375rem, 0rem + 1.7188vw, 4.125rem);
 }
@@ -99,7 +110,32 @@
   gap: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
 }
 .Alert_container {
+  overflow-y: scroll;
+  max-height: 73.48%;
   display: flex;
   flex-direction: column;
   gap: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+.savebutton {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: linear-gradient(
+    93deg,
+    rgba(255, 255, 255, 0.5) -21.79%,
+    rgba(255, 255, 255, 0.2) 123.6%
+  );
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(
+    93deg,
+    rgba(255, 255, 255, 0.5) -21.79%,
+    rgba(255, 255, 255, 0.2) 123.6%
+  );
+}
+.dropDownContainer {
+  overflow-y: scroll;
+  height: 340px;
+  max-height: 440px;
 }
