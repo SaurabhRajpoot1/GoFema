@@ -1,0 +1,105 @@
+.add-location-container {
+  width: 19.43%;
+  height: 100%;
+  text-align: left;
+  margin: 20px;
+}
+.dropDownContainer {
+  height: 428px;
+  overflow-y: scroll;
+}
+.formButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  flex-direction: row;
+  border-radius: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+
+  background: linear-gradient(
+    93deg,
+    rgba(255, 255, 255, 0.5) -21.79%,
+    rgba(255, 255, 255, 0.2) 123.6%
+  );
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+.add_icon {
+  height: clamp(1rem, 0rem + 1.25vw, 3rem);
+  width: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+.add_icon img {
+  height: clamp(1rem, 0rem + 1.25vw, 3rem);
+  width: clamp(1rem, 0rem + 1.25vw, 3rem);
+}
+.add-location-button {
+  cursor: pointer;
+}
+.saved-location {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../resources/CloudImgeForLocationBackground.jpg");
+  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  gap: clamp(1.375rem, 0rem + 1.7188vw, 4.125rem);
+  background-position: center;
+  border-radius: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  margin-bottom: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+.locationDetails {
+  display: flex;
+  gap: clamp(0.125rem, 0rem + 0.1563vw, 0.375rem);
+  flex-direction: row;
+}
+.profile_div {
+  display: flex;
+  flex-direction: row;
+}
+.add-location-form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.375rem, 0rem + 1.7188vw, 4.125rem);
+}
+
+.scroll-div {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.underline-input {
+  border: none;
+  padding-bottom: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+  outline: none;
+  /* Add some padding for better visibility */
+  border-bottom: 1px solid var(--White-5, #f0f0f0);
+  background-color: transparent;
+}
+
+/* Optional: Add styles for placeholder text */
+.underline-input::placeholder {
+  font-size: clamp(0.875rem, 0rem + 1.0938vw, 2.625rem);
+  color: #f0f0f0;
+  /* Adjust the color as needed */
+}
+/* Add your own styling based on your design preferences */
+.serach_icon {
+  align-self: flex-end;
+}
+#enter_zip {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.add_name {
+  margin-bottom: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+.Alert_select_all_div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  gap: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+.Alert_container {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}

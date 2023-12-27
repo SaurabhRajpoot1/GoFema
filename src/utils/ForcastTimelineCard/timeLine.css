@@ -1,0 +1,12 @@
+.TimeCardmain_container {
+  display: flex;
+  width: clamp(3.9375rem, 0rem + 4.9219vw, 11.8125rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+}
+.cloudTimeLine {
+  height: clamp(2.5rem, 0rem + 3.125vw, 7.5rem);
+  width: clamp(2.5rem, 0rem + 3.125vw, 7.5rem);
+}

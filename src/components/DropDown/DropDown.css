@@ -1,0 +1,49 @@
+.DropDown {
+  display: flex;
+
+  padding: 10px 12px;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+
+  background: transparent;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+
+  justify-content: space-between;
+}
+.DropDown:active {
+  border: none;
+  box-shadow: none;
+}
+
+.dropdownToggls {
+  display: flex;
+  flex-direction: column;
+}
+.main_dropDownContainer {
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: linear-gradient(
+    93deg,
+    rgba(255, 255, 255, 0.5) -21.79%,
+    rgba(255, 255, 255, 0.2) 123.6%
+  );
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(
+    93deg,
+    rgba(255, 255, 255, 0.5) -21.79%,
+    rgba(255, 255, 255, 0.2) 123.6%
+  );
+}
+.dropDown_toggles_child {
+  display: flex;
+  padding: clamp(0.625rem, 0rem + 0.7813vw, 1.875rem)
+    clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
+  flex-direction: row;
+  align-items: center;
+  height: clamp(2.5rem, 0rem + 3.125vw, 7.5rem);
+  gap: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}

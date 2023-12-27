@@ -1,27 +1,86 @@
 /* WeatherToggleBar.css */
-
+.forcastBar_mainconatainer {
+  margin-top: 24px;
+  height: clamp(12.375rem, 0rem + 15.4688vw, 37.125rem);
+}
 .toggle-bar {
   display: flex;
-  background: rgba(0, 0, 0, 0.16);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 25px;
+  justify-content: space-between;
   overflow: hidden;
+  width: clamp(35rem, 0rem + 43.75vw, 105rem);
+  gap: clamp(1rem, 0rem + 1.25vw, 3rem);
 }
 
 .toggle-btn {
-  flex: 1;
-  padding: 10px;
+  /* flex: 1; */
+  display: flex;
+  padding: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem)
+    clamp(1rem, 0rem + 1.25vw, 3rem);
   text-align: center;
   color: #fff;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.16);
+  justify-content: center;
+  align-items: center;
+  border-radius: clamp(1.5625rem, 0rem + 1.9531vw, 4.6875rem);
+  background: transparent;
+  width: clamp(9rem, 0rem + 11.25vw, 27rem);
 }
 
 .toggle-btn:hover {
-  border-radius: 25px;
-  background: rgba(0, 0, 0, 0.16);
+  border-radius: clamp(1.5625rem, 0rem + 1.9531vw, 4.6875rem);
+  background: rgba(246, 246, 246, 0.16);
 }
 
 .active {
   border-radius: 25px;
-  background: rgba(0, 0, 0, 0.16);
+  background: rgba(246, 246, 246, 0.16);
+}
+.icon {
+  width: clamp(1rem, 0rem + 1.25vw, 3rem);
+  height: clamp(1rem, 0rem + 1.25vw, 3rem);
+  margin-right: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+.forcastBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: clamp(2.5rem, 0rem + 3.125vw, 7.5rem);
+  /* width: clamp(44.625rem, 0rem + 55.7813vw, 133.875rem) !important; */
+  gap: clamp(1.8125rem, 0rem + 2.2656vw, 5.4375rem);
+  margin-bottom: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+.forCastContainer {
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: linear-gradient(
+    93deg,
+    rgba(0, 0, 0, 0.5) -21.79%,
+    rgba(0, 0, 0, 0.2) 123.6%
+  );
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  width: clamp(54.8125rem, 0rem + 68.5156vw, 164.4375rem);
+  /* position: relative; */
+}
+.timeLineContainer {
+  display: flex;
+  flex-direction: row;
+
+  /* margin-top: clamp(4.6875rem, 0rem + 5.8594vw, 14.0625rem);
+  margin-left: clamp(1.0625rem, 0rem + 1.3281vw, 3.1875rem);
+  margin-right: clamp(1.0625rem, 0rem + 1.3281vw, 3.1875rem);
+  margin-bottom: clamp(0.625rem, 0rem + 0.7813vw, 1.875rem); */
+  gap: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+}
+
+.forcastDetails {
+  height: clamp(7.125rem, 0rem + 8.9063vw, 21.375rem);
+  margin-top: clamp(2.1875rem, 0rem + 2.7344vw, 6.5625rem);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-image: url("../../resources/stream.svg");
 }

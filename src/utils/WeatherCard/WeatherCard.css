@@ -1,19 +1,35 @@
 .main_containerWeatherDetails {
-  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
+  padding: clamp(0.5rem, 0rem + 0.625vw, 1.5rem)
+    clamp(0.25rem, 0rem + 0.3125vw, 0.75rem)
+    clamp(0.5rem, 0rem + 0.625vw, 1.5rem) clamp(0.5rem, 0rem + 0.625vw, 1.5rem);
   display: flex;
   /* width: 21.3%; */
   /* height: 37.4%; */
   flex-direction: row;
-
+  /* gap: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem); */
   border-radius: 8px;
   background: linear-gradient(
     151deg,
     rgba(254, 254, 254, 0.2) 0%,
     rgba(152, 152, 152, 0.2) 100.72%
   );
+  /* height: 44.8%; */
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+  height: 100%;
+  width: 100%;
 }
 .lefSide {
   display: flex;
   flex-direction: column;
   gap: clamp(0.25rem, 0rem + 0.3125vw, 0.75rem);
+}
+#parameterIcon {
+  height: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
+  width: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
+}
+#parameterImage {
+  width: clamp(4rem, -0.0313rem + 5.0391vw, 12.0625rem);
+  height: clamp(4rem, -0.0313rem + 5.0391vw, 12.0625rem);
 }

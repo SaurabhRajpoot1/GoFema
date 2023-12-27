@@ -19,6 +19,9 @@ body {
   font-size: clamp(0.75rem, 0rem + 0.9375vw, 2.25rem);
 }
 /* FONT SIZE 1rem clamped */
+.fs-14 {
+  font-size: clamp(0.875rem, 0rem + 1.0938vw, 2.625rem);
+}
 .fs-16 {
   font-size: clamp(1rem, 0rem + 1.25vw, 3rem);
 }
@@ -30,7 +33,9 @@ body {
 .fs-24 {
   font-size: clamp(1.5rem, 0rem + 1.875vw, 4.5rem);
 }
-
+.fs-28 {
+  font-size: clamp(1.75rem, 0rem + 2.1875vw, 5.25rem);
+}
 /* FONT SIZE 2rem clamped */
 .fs-32 {
   font-size: clamp(2rem, 0rem + 2.5vw, 6rem);
